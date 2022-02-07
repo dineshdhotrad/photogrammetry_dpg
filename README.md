@@ -9,5 +9,8 @@ Photogrammetry pipeline using [OpenMVG](https://github.com/openMVG/openMVG) and 
 This method will build and install required binaries directly to your linux installation. **It is not recommended!**
 ```
 https://github.com/dineshdhotrad/photogrammetry_dpg.git && cd photogrammetry_dpg
-sudo ./build.sh
+-> For NVIDIA GPU
+sudo ./photogrammetry_gpu_build.sh
+-> For CPU ONLY
+sudo ./photogrammetry_build.sh
 ```
