@@ -8,6 +8,6 @@ Photogrammetry pipeline using [OpenMVG](https://github.com/openMVG/openMVG) and 
 ### Linux (or Windows Subsystem for Linux)
 This method will build and install required binaries directly to your linux installation. **It is not recommended!**
 ```
-git clone https://github.com/rennu/dpg /tmp/dpg && cd /tmp/dpg
+https://github.com/dineshdhotrad/photogrammetry_dpg.git && cd photogrammetry_dpg
 sudo ./build.sh
 ```
