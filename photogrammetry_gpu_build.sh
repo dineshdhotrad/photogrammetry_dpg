@@ -31,7 +31,7 @@ curl -L http://ceres-solver.org/ceres-solver-2.0.0.tar.gz | tar xz && \
     cd $TMP/ceres-solver-2.0.0
 
 git clone --recursive https://github.com/mapillary/OpenSfM ${TMP}/opensfm && \
-  cd ${TMP}/opensfm && \
+  cd ${TMP}/opensfm && git checkout tags/v0.5.1 && \
   pip3 install -r requirements.txt && \
   python3 setup.py build
 
@@ -75,6 +75,7 @@ git clone https://github.com/cdcseacave/VCG.git ${TMP}/vcglib
 
 # Install OpenMVG
 git clone -b develop --recursive https://github.com/openMVG/openMVG.git ${TMP}/openmvg && \
+  cd ${TMP}/openmvg && git checkout tags/v2.0 && \
   mkdir ${TMP}/openmvg_build && cd ${TMP}/openmvg_build && \
   cmake -DCMAKE_BUILD_TYPE=RELEASE . ../openmvg/src -DCMAKE_INSTALL_PREFIX=/opt/openmvg && \
   make -j4  && \
